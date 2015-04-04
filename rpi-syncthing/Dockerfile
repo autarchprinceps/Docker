@@ -1,5 +1,5 @@
 FROM autarchprinceps/rpi-cirros
-MAINTAINER autarch princeps <autarch@outlook.com>
+MAINTAINER "autarch princeps" autarch@outlook.com
 
 COPY syncthing /bin
 

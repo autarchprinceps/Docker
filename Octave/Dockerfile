@@ -1,5 +1,4 @@
 FROM fedora
-
 MAINTAINER "autarch princeps" autarch@outlook.com
 
 RUN useradd -m docker

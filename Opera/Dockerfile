@@ -1,4 +1,5 @@
 FROM ubuntu
+MAINTAINER "autarch princeps" autarch@outlook.com
 
 RUN apt-get update && apt-get install -y wget gdebi-core
 
