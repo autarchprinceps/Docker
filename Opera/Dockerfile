@@ -1,7 +1,9 @@
-FROM ubuntu
+FROM debian:testing
 MAINTAINER "autarch princeps" autarch@outlook.com
 
-RUN apt-get update && apt-get install -y wget gdebi-core
+ENV DEBIAN_FRONTEND noninteractive
+
+RUN apt-get update && apt-get install -y apt-utils && apt-get install -y wget gdebi-core
 
 RUN wget -O opera.deb "http://www.opera.com/download/get/?id=38176&amp;location=395&amp;nothanks=yes&amp;sub=marine" && gdebi -n opera.deb
 
